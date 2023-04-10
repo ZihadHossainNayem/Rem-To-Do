@@ -15,53 +15,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="greet">
-      <h2 class="title">
-        Hey, <input type="text" id="name" placeholder="Name here" />
-      </h2>
-    </section>
+    <main class="app">
+      <section class="greet">
+        <h2 class="title">
+          Hey, <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
 
-    <section class="create-to-do">
-      <h3>Create a To Do</h3>
-      <form id="to-do-form">
-        <h4>What's on your to list</h4>
-        <input
-          type="text"
-          name="content"
-          id="content"
-          placeholder="e.g. cse 402 at 4.00 pm"
-        />
-        <h4>Pick a Category</h4>
-        <div class="option">
-          <label>
-            <input
-              type="radio"
-              name="Category"
-              id="category1"
-              value="personal"
-            />
-            <span class="bubble personal"></span>
-            <div>personal</div>
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="Category"
-              id="category2"
-              value="Business"
-            />
-            <span class="bubble business"></span>
-            <div>Business</div>
-          </label>
-        </div>
-        <input type="submit" value="Add To Do" />
-      </form>
-    </section>
+      <section class="create-to-do">
+        <h3>Create a To Do</h3>
+        <form id="todo-form">
+          <h4>What's on your to list</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="e.g. cse 402 at 4.00 pm"
+          />
+          <h4>Pick a Category</h4>
+          <div class="option">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>personal</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="Business"
+              />
+              <span class="bubble business"></span>
+              <div>Business</div>
+            </label>
+          </div>
+          <input type="submit" value="Add To Do" />
+        </form>
+      </section>
 
-    <section class="todo-list">
-      <h3>To Do List</h3>
-      <!--  <div class="list" id="todo-list">
-        <div class="todo-item done">
+      <section class="todo-list">
+        <h3>To Do List</h3>
+        <div class="list" id="todo-list">
+          <!-- <div class="todo-item done">
           <label>
             <input type="checkbox" />
             <span class="bubble personal"></span>
@@ -89,9 +90,10 @@
             <button class="edit">Edit</button>
             <button class="delete">Delete</button>
           </div>
+        </div> -->
         </div>
-      </div> -->
-    </section>
+      </section>
+    </main>
 
     <script src="main.js"></script>
   </body>
