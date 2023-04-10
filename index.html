@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem To Do 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="greet">
+      <h2 class="title">
+        Hey, <input type="text" id="name" placeholder="Name here" />
+      </h2>
+    </section>
+
+    <section class="create-to-do">
+      <h3>Create a To Do</h3>
+      <form action="" id="to-do-form">
+        <h4>What's on your to list</h4>
+        <input
+          type="text"
+          name="content"
+          id="content"
+          placeholder="e.g. cse 402 at 4.00 pm"
+        />
+        <h4>Pick a Category</h4>
+        <div class="options">
+          <label>
+            <input
+              type="radio"
+              name="Category"
+              id="category1"
+              value="personal"
+            />
+            <span class="bubble-personal"></span>
+            <div>personal</div>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="Category"
+              id="category2"
+              value="Business"
+            />
+            <span class="bubble-business"></span>
+            <div>Business</div>
+          </label>
+        </div>
+        <input type="submit" value="Add To Do" />
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <div class="list" id="todo-list">
+        <div class="to-do-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble-business"></span>
+          </label>
+          <div class="todo-content">
+            <input type="text" value="make meeting preparation" readonly />
+          </div>
+
+          <div class="action">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="to-do-item">
+          <label>
+            <input type="checkbox" />
+            <span class="bubble-personal"></span>
+          </label>
+          <div class="todo-content">
+            <input type="text" value="make food" readonly />
+          </div>
+
+          <div class="action">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
