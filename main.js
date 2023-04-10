@@ -55,11 +55,13 @@ function displayToDo() {
     input.type = "checkbox";
     input.checked = singleToDo.done;
     span.classList.add("bubble");
+
     if (singleToDo.category == "personal") {
       span.classList.add("personal");
     } else {
       span.classList.add("business");
     }
+
     content.classList.add("todo-content");
     action.classList.add("action");
     edit.classList.add("edit");
