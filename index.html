@@ -23,7 +23,7 @@
 
     <section class="create-to-do">
       <h3>Create a To Do</h3>
-      <form action="" id="to-do-form">
+      <form id="to-do-form">
         <h4>What's on your to list</h4>
         <input
           type="text"
@@ -32,7 +32,7 @@
           placeholder="e.g. cse 402 at 4.00 pm"
         />
         <h4>Pick a Category</h4>
-        <div class="options">
+        <div class="option">
           <label>
             <input
               type="radio"
@@ -40,7 +40,7 @@
               id="category1"
               value="personal"
             />
-            <span class="bubble-personal"></span>
+            <span class="bubble personal"></span>
             <div>personal</div>
           </label>
           <label>
@@ -50,7 +50,7 @@
               id="category2"
               value="Business"
             />
-            <span class="bubble-business"></span>
+            <span class="bubble business"></span>
             <div>Business</div>
           </label>
         </div>
@@ -59,14 +59,15 @@
     </section>
 
     <section class="todo-list">
-      <div class="list" id="todo-list">
-        <div class="to-do-item">
+      <h3>To Do List</h3>
+      <!--  <div class="list" id="todo-list">
+        <div class="todo-item done">
           <label>
             <input type="checkbox" />
-            <span class="bubble-business"></span>
+            <span class="bubble personal"></span>
           </label>
           <div class="todo-content">
-            <input type="text" value="make meeting preparation" readonly />
+            <input type="text" value="making food" readonly />
           </div>
 
           <div class="action">
@@ -75,13 +76,13 @@
           </div>
         </div>
 
-        <div class="to-do-item">
+        <div class="todo-item">
           <label>
             <input type="checkbox" />
-            <span class="bubble-personal"></span>
+            <span class="bubble business"></span>
           </label>
           <div class="todo-content">
-            <input type="text" value="make food" readonly />
+            <input type="text" value="meeting preparation"" readonly />
           </div>
 
           <div class="action">
@@ -89,7 +90,7 @@
             <button class="delete">Delete</button>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <script src="main.js"></script>
