@@ -226,3 +226,10 @@ input:checked ~ .bubble::after {
   text-decoration: line-through;
   color: var(--grey);
 }
+
+@media only screen and (max-width: 600px) {
+  .app {
+    width: 100%;
+    height: 100%;
+  }
+}
